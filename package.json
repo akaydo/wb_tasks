@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@types/node": "^18.0.0"
+  },
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
