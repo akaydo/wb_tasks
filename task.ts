@@ -1,4 +1,4 @@
-export {}
+export { }
 
 interface IData {
     dt: string,
@@ -13,7 +13,7 @@ interface ITemp {
     optional?: boolean
 }
 
-var data: IData[] = [
+let data: IData[] = [
     {
         "dt": "01-01-2021",
         "quantity": 100,
@@ -72,16 +72,16 @@ var data: IData[] = [
     }
 ]
 
-var getUniqueDate = new Set(data.map(function (item) {
-    return item['dt']; 
-   }));
-   
+let getUniqueDate = new Set(data.map(function (item) {
+    return item['dt'];
+}));
+
 console.log(getUniqueDate);
 
-var getDataByDate = new Map();
+let getDataByDate = new Map();
 
 data.forEach(function (item) {
     return getDataByDate.set(item['dt'], item);
-   });
+});
 
 console.log(getDataByDate);
